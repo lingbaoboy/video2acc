@@ -1,0 +1,9 @@
+pip install PySide6 ffmpeg-python pyinstaller
+
+Windows
+pyinstaller app.py --noconsole --icon=./ico.ico --add-data "ffmpeg;ffmpeg"  --add-data "ico.ico;." --add-data "ico.png;." --add-data "ico.icns;."
+
+macos
+pyinstaller app.py --noconsole --icon=./ico.icns --add-data "ffmpeg:ffmpeg" --add-data "ico.icns:." --add-data "ico.png:." --add-data "ico.ico:."
+
+pyinstaller app.py --icon=./ico.icns --add-data "ffmpeg:ffmpeg" --add-data "ico.icns:." --add-data "ico.png:." --add-data "ico.ico:."
